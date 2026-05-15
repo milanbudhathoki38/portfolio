@@ -28,50 +28,87 @@ export default function Home() {
     }
   }
   return (
-    <main style={{ 
-  maxWidth: '1100px', 
-  margin: '0 auto', 
-  paddingLeft: 'clamp(24px, 5vw, 80px)', 
-  paddingRight: 'clamp(24px, 5vw, 80px)' 
-}}>
+    <main style={{
+      maxWidth: '1100px',
+      margin: '0 auto',
+      paddingLeft: 'clamp(24px, 5vw, 80px)',
+      paddingRight: 'clamp(24px, 5vw, 80px)'
+    }}>
 
       {/* HERO SECTION */}
-      <section className="flex flex-col justify-center" style={{ minHeight: '100vh', paddingTop: '140px' }}>
-        <div className="flex items-center gap-8 mb-8">
-          <img
-            src="/Melan.jpeg"
-            alt="Milan Budhathoki"
-            style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover' }}
-          />
-        </div>
-        <p style={{ fontSize: '12px', color: '#9ca3af', marginBottom: '16px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-          Full Stack Developer · CS Student
-        </p>
-        <h1 className="text-6xl font-semibold text-gray-900 leading-tight" style={{ marginBottom: '24px' }}>
-          Hi, I am Milan <br />
-          Budhathoki.
-        </h1>
-        <p className="text-xl text-gray-500 font-light italic" style={{ marginBottom: '12px' }}>
-          Mathematics is the why. Code is the how.
-        </p>
-        <p className="text-base text-gray-400 max-w-xl leading-relaxed" style={{ marginBottom: '40px' }}>
-          CS student who loves building things from scratch —
-          web apps, algorithms, and anything that makes me think.
-        </p> 
-        <div className="flex gap-4">
-          <a href="#projects" className="bg-gray-900 text-white rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block'  }}>
-            View Projects
-          </a>
-          <a href="/resume.pdf" download className="border border-gray-300 text-gray-600 rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block'  }}>
-            Download Resume
-          </a>
-        </div>
-      </section>
+     <section className="flex justify-center" style={{ minHeight: '100vh', paddingTop: '140px', flexDirection: 'row', alignItems: 'center', gap: '80px' }}>
+  
+  {/* LEFT SIDE - existing content */}
+  <div style={{ flex: 1 }}>
+    <div className="flex items-center gap-8 mb-8">
+      <img
+        src="/Melan.jpeg"
+        alt="Milan Budhathoki"
+        style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover' }}
+      />
+    </div>
+    <p style={{ fontSize: '12px', color: '#9ca3af', marginBottom: '16px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+      Full Stack Developer · CS Student
+    </p>
+    <h1 className="text-6xl font-semibold text-gray-900 leading-tight" style={{ marginBottom: '24px' }}>
+      Hi, I am Milan <br />
+      Budhathoki.
+    </h1>
+    <p className="text-xl text-gray-500 font-light italic" style={{ marginBottom: '12px' }}>
+      Mathematics is the why. Code is the how.
+    </p>
+    <p className="text-base text-gray-400 max-w-xl leading-relaxed" style={{ marginBottom: '40px' }}>
+      CS student who loves building things from scratch —
+      web apps, algorithms, and anything that makes me think.
+    </p>
+    <div className="flex gap-4">
+      <a href="#projects" className="bg-gray-900 text-white rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block' }}>
+        View Projects
+      </a>
+      <a href="/resume.pdf" download className="border border-gray-300 text-gray-600 rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block' }}>
+        Download Resume
+      </a>
+    </div>
+  </div>
+
+  {/* RIGHT SIDE - contact info */}
+  <div style={{ flex: '0 0 240px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+    <a href="https://github.com/milanbudhathoki38" target="_blank" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none', color: '#6b7280' }}>
+      <span style={{ fontSize: '20px' }}>⌥</span>
+      <div>
+        <p style={{ fontSize: '11px', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '2px' }}>GitHub</p>
+        <p style={{ fontSize: '14px', color: '#374151' }}>milanbudhathoki38</p>
+      </div>
+    </a>
+    <a href="mailto:milan.budhatho1@smail.astate.edu" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none', color: '#6b7280' }}>
+      <span style={{ fontSize: '20px' }}>✉</span>
+      <div>
+        <p style={{ fontSize: '11px', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '2px' }}>Email</p>
+        <p style={{ fontSize: '14px', color: '#374151' }}>milan.budhatho1@smail.astate.edu</p>
+      </div>
+    </a>
+    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+      <span style={{ fontSize: '20px' }}>◎</span>
+      <div>
+        <p style={{ fontSize: '11px', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '2px' }}>Location</p>
+        <p style={{ fontSize: '14px', color: '#374151' }}>Jonesboro, AR</p>
+      </div>
+    </div>
+    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+      <span style={{ fontSize: '20px' }}>◈</span>
+      <div>
+        <p style={{ fontSize: '11px', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '2px' }}>Status</p>
+        <p style={{ fontSize: '14px', color: '#374151' }}>Open to internships</p>
+      </div>
+    </div>
+  </div>
+
+</section>
 
       <hr className="border-gray-200" style={{ marginTop: '0px', marginBottom: '0px' }} />
 
       {/* ABOUT SECTION */}
-      <section id="about" style={{ padding: '40px 0' }}>
+      <section id="about" style={{ padding: '20px 0' }}>
         <p style={{ fontSize: '12px', color: '#6b7280', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
           About Me
         </p>
@@ -100,7 +137,7 @@ export default function Home() {
       <hr className="border-gray-200" style={{ marginTop: '0px', marginBottom: '0px' }} />
 
       {/* PROJECTS SECTION */}
-      <section id="projects" style={{ padding: '40px 0' }}>
+      <section id="projects" style={{ padding: '20px 0' }}>
         <p style={{ fontSize: '12px', color: '#6b7280', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
           Projects
         </p>
@@ -110,48 +147,7 @@ export default function Home() {
 
         <div className="flex flex-col" style={{ gap: '20px' }}>
 
-          {/* Project 1 */}
-          <div className="rounded-2xl hover:bg-gray-100 transition-colors" style={{ background: '#f9fafb', padding: '24px' }}>
-            <div className="flex justify-between items-start" style={{ marginBottom: '12px' }}>
-              <h3 className="text-xl font-semibold text-gray-900">Portfolio Website</h3>
-              <span className="text-sm text-gray-400">2025</span>
-            </div>
-            <p className="text-gray-500 leading-relaxed" style={{ marginBottom: '20px' }}>
-              Designed and built this portfolio from scratch — frontend, backend, and deployment.
-              Built with Next.js and Tailwind CSS, deployed on Vercel.
-            </p>
-            <div className="flex gap-2" style={{ marginBottom: '20px' }}>
-              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Next.js</span>
-              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>React</span>
-              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Tailwind CSS</span>
-            </div>
-            <div className="flex gap-6">
-              <a href="#" className="text-sm text-blue-600 hover:underline">GitHub →</a>
-              <a href="#" className="text-sm text-blue-600 hover:underline">Live Demo →</a>
-            </div>
-          </div>
-
-          {/* Project 2 */}
-          <div className="rounded-2xl hover:bg-gray-100 transition-colors" style={{ background: '#f9fafb', padding: '24px' }}>
-            <div className="flex justify-between items-start" style={{ marginBottom: '12px' }}>
-              <h3 className="text-xl font-semibold text-gray-900">Dragon Minigame</h3>
-              <span className="text-sm text-gray-400">2024</span>
-            </div>
-            <p className="text-gray-500 leading-relaxed" style={{ marginBottom: '20px' }}>
-              A text-based RPG minigame built in C++ using object oriented programming.
-              Features multiple classes, inheritance, and game logic spread across 10+ files.
-            </p>
-            <div className="flex gap-2" style={{ marginBottom: '20px' }}>
-              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>C++</span>
-              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>OOP</span>
-              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Git</span>
-            </div>
-            <div className="flex gap-6">
-              <a href="https://github.com/milanbudhathoki38/dragon-minigame" target="_blank" style={{ fontSize: '14px', color: '#2563eb', textDecoration: 'none' }}>GitHub →</a>
-            </div>
-          </div>
-
-          {/* Project 3 */}
+             {/* Project 1 */}
           <div className="rounded-2xl hover:bg-gray-100 transition-colors" style={{ background: '#f9fafb', padding: '24px' }}>
             <div className="flex justify-between items-start" style={{ marginBottom: '12px' }}>
               <h3 className="text-xl font-semibold text-gray-900">Digital Logic Projects</h3>
@@ -170,13 +166,58 @@ export default function Home() {
             </div>
           </div>
 
+
+      
+
+         {/* Project 2 */}
+          <div className="rounded-2xl hover:bg-gray-100 transition-colors" style={{ background: '#f9fafb', padding: '24px' }}>
+            <div className="flex justify-between items-start" style={{ marginBottom: '12px' }}>
+              <h3 className="text-xl font-semibold text-gray-900">Dragon Minigame</h3>
+              <span className="text-sm text-gray-400">2024</span>
+            </div>
+            <p className="text-gray-500 leading-relaxed" style={{ marginBottom: '20px' }}>
+              A text-based RPG minigame built in C++ using object oriented programming.
+              Features multiple classes, inheritance, and game logic spread across 10+ files.
+            </p>
+            <div className="flex gap-2" style={{ marginBottom: '20px' }}>
+              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>C++</span>
+              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>OOP</span>
+              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Git</span>
+            </div>
+            <div className="flex gap-6">
+              <a href="https://github.com/milanbudhathoki38/dragon-minigame" target="_blank" style={{ fontSize: '14px', color: '#2563eb', textDecoration: 'none' }}>GitHub →</a>
+            </div>
+          </div>
+             
+    
+
+          {/* Project 3 */}
+          <div className="rounded-2xl hover:bg-gray-100 transition-colors" style={{ background: '#f9fafb', padding: '24px' }}>
+            <div className="flex justify-between items-start" style={{ marginBottom: '12px' }}>
+              <h3 className="text-xl font-semibold text-gray-900">Portfolio Website</h3>
+              <span className="text-sm text-gray-400">2025</span>
+            </div>
+            <p className="text-gray-500 leading-relaxed" style={{ marginBottom: '20px' }}>
+              Designed and built this portfolio from scratch — frontend, backend, and deployment.
+              Built with Next.js and Tailwind CSS, deployed on Vercel.
+            </p>
+            <div className="flex gap-2" style={{ marginBottom: '20px' }}>
+              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Next.js</span>
+              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>React</span>
+              <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Tailwind CSS</span>
+            </div>
+            <div className="flex gap-6">
+              <a href="https://github.com/milanbudhathoki38/portfolio" target="_blank" style={{ fontSize: '14px', color: '#2563eb' }}>GitHub →</a>
+              <a href="https://portfolio-delta-sandy-5ee88992ad.vercel.app" target="_blank" style={{ fontSize: '14px', color: '#2563eb' }}>Live Demo →</a>
+            </div>
+          </div>
         </div>
       </section>
 
       <hr className="border-gray-200" style={{ marginTop: '0px', marginBottom: '0px' }} />
 
       {/* SKILLS SECTION */}
-      <section id="skills" style={{ padding: '40px 0' }}>
+      <section id="skills" style={{ padding: '20px 0' }}>
         <p style={{ fontSize: '12px', color: '#6b7280', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
           Skills
         </p>
@@ -224,7 +265,7 @@ export default function Home() {
       <hr className="border-gray-200" style={{ marginTop: '0px', marginBottom: '0px' }} />
 
       {/* EXPERIENCE SECTION */}
-      <section id="experience" style={{ padding: '40px 0' }}>
+      <section id="experience" style={{ padding: '20px 0' }}>
         <p style={{ fontSize: '12px', color: '#6b7280', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
           Experience
         </p>
@@ -265,7 +306,7 @@ export default function Home() {
       <hr className="border-gray-200" style={{ marginTop: '0px', marginBottom: '0px' }} />
 
       {/* CONTACT SECTION */}
-      <section id="contact" style={{ padding: '40px 0' }}>
+      <section id="contact" style={{ padding: '20px 0' }}>
         <p style={{ fontSize: '12px', color: '#6b7280', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
           Contact
         </p>
