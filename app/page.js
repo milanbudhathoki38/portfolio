@@ -105,8 +105,8 @@ export default function Home() {
               Mathematics is the why. Code is the how.
             </p>
             <p className="text-base text-gray-400 max-w-xl leading-relaxed" style={{ marginBottom: '40px' }}>
-              CS student who loves building things from scratch —
-              web apps, algorithms, and anything that makes me think.
+              CS student who builds things to understand them. Web apps, algorithms, 
+              anything that makes me think harder than I expected.
             </p>
             <div className="flex gap-4">
               <a href="#projects" className="bg-gray-900 text-white rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block' }}>
@@ -134,7 +134,7 @@ export default function Home() {
                 <p style={{ fontSize: '14px', color: '#374151' }}>milan.budhatho1@smail.astate.edu</p>
               </div>
             </a>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' , marginBottom: '16px' }}>
               <span style={{ fontSize: '20px' }}>◎</span>
               <div>
                 <p style={{ fontSize: '11px', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '2px' }}>Location</p>
@@ -164,15 +164,14 @@ export default function Home() {
           </h2>
           <div className="max-w-2xl flex flex-col" style={{ gap: '24px' }}>
             <p className="text-lg text-gray-500 leading-relaxed">
-              I am a CS student who started college placing into intermediate algebra
-              and ended up pursuing a math minor because I fell in love with it.
-              There is a beauty in mathematics — a truth — that I did not expect to find.
+            I started college placing into intermediate algebra and ended up pursuing a math 
+            minor because I genuinely fell in love with it. There is something about 
+            mathematics that just clicked for me in a way I never expected.
             </p>
             <p className="text-lg text-gray-500 leading-relaxed">
-              I am drawn to problems that make me think — whether that's algorithms,
-              calculus, or figuring out how the web actually works under the hood.
-              Outside of class I build real projects from scratch because
-              I learn best by making things.
+             I like problems that make me slow down and actually think. Algorithms, calculus, 
+             how the web works under the hood, that stuff genuinely interests me. Outside of 
+             class I build real projects because that is how I learn best.
             </p>
             <p className="text-lg text-gray-500 leading-relaxed">
               Currently studying CS with a Mathematics minor.
