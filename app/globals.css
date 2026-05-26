@@ -29,4 +29,45 @@ body {
   }
 }
 
+/* Dark mode */
+html.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+html.dark nav {
+  background: rgba(17, 24, 39, 0.85) !important;
+  border-bottom: 1px solid #1f2937 !important;
+}
+
+html.dark nav span,
+html.dark nav a {
+  color: #f9fafb !important;
+}
+
+html.dark .rounded-2xl {
+  background: #1f2937 !important;
+}
+
+html.dark hr {
+  border-color: #1f2937 !important;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3 {
+  color: #f9fafb !important;
+}
+
+html.dark p,
+html.dark li {
+  color: #9ca3af !important;
+}
+
+html.dark input,
+html.dark textarea {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+  color: #f9fafb !important;
+}
 
