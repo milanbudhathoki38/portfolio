@@ -71,3 +71,16 @@ html.dark textarea {
   color: #f9fafb !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark a[href="/resume.pdf"] {
+  color: #f9fafb !important;
+  border-color: #4b5563 !important;
+}
+
+html.dark .back-to-top {
+background: #f9fafb !important;
+color: #111827 !important;
+}

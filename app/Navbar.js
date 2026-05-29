@@ -141,6 +141,29 @@ export default function Navbar() {
           color: #f9fafb !important;
         }
       `}</style>
+      <button
+      classname="back-to-top"
+  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+  style={{
+    position: 'fixed',
+    bottom: '24px',
+    right: '24px',
+    background: '#111827',
+    color: 'white',
+    border: 'none',
+    borderRadius: '50%',
+    width: '40px',
+    height: '40px',
+    fontSize: '18px',
+    cursor: 'pointer',
+    zIndex: 99,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }}
+>
+  ↑
+</button>
     </>
   )
 }
