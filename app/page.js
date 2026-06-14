@@ -127,6 +127,13 @@ export default function Home() {
                 <p style={{ fontSize: '14px', color: '#374151' }}>milanbudhathoki38</p>
               </div>
             </a>
+            <a href="https://www.linkedin.com/in/milan-budhathoki-8200673b9/" target="_blank" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none', color: '#6b7280' }}>
+  <span style={{ fontSize: '20px' }}>in</span>
+  <div>
+    <p style={{ fontSize: '11px', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '2px' }}>LinkedIn</p>
+    <p style={{ fontSize: '14px', color: '#374151' }}>Milan Budhathoki</p>
+  </div>
+</a>
             <a href="mailto:milan.budhatho1@smail.astate.edu" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none', color: '#6b7280' }}>
               <span style={{ fontSize: '20px' }}>✉</span>
               <div>
