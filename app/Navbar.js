@@ -13,7 +13,7 @@ export default function Navbar() {
     }
   }, [dark])
 
-  const links = ['About', 'Projects', 'Skills', 'Experience', 'Contact']
+ const links = ['About', 'Projects', 'Skills', 'LeetCode', 'Experience', 'Contact']
 
   return (
     <>
@@ -142,7 +142,7 @@ export default function Navbar() {
         }
       `}</style>
       <button
-      classname="back-to-top"
+      className="back-to-top"
   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
   style={{
     position: 'fixed',
