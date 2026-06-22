@@ -1,11 +1,20 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [status, setStatus] = useState('idle')
+  const [leetcode, setLeetcode] = useState(null)
+const [lcLoading, setLcLoading] = useState(true)
+
+useEffect(() => {
+  fetch('/api/leetcode')
+    .then(res => res.json())
+    .then(data => { setLeetcode(data); setLcLoading(false) })
+    .catch(() => setLcLoading(false))
+}, [])
 
   async function handleSubmit() {
     setStatus('sending')
@@ -309,7 +318,65 @@ export default function Home() {
           </div>
         </section>
 
+        
+<hr className="border-gray-200" style={{ marginTop: '0px', marginBottom: '0px' }} />
+
+        {/* LEETCODE SECTION */}
+        <section id="leetcode" style={{ padding: '20px 0' }}>
+          <p style={{ fontSize: '12px', color: '#6b7280', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+            LeetCode
+          </p>
+          <h2 className="text-4xl font-semibold text-gray-900" style={{ marginBottom: '20px', marginTop: '12px' }}>
+            Algorithms I have solved.
+          </h2>
+
+          {lcLoading ? (
+            <p className="text-gray-400 text-sm">Loading stats...</p>
+          ) : leetcode ? (
+            <div className="rounded-2xl" style={{ background: '#f9fafb', padding: '32px', maxWidth: '480px' }}>
+              <div style={{ marginBottom: '24px' }}>
+                <p style={{ fontSize: '12px', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '6px' }}>Total Solved</p>
+                <p className="text-4xl font-semibold text-gray-900">{leetcode.total}</p>
+              </div>
+
+              <div className="flex flex-col" style={{ gap: '14px' }}>
+                {[
+                  { label: 'Easy', count: leetcode.easy, color: '#16a34a' },
+                 { label: 'Medium', count: leetcode.medium, color: '#f89f1b' },
+                  { label: 'Hard', count: leetcode.hard, color: '#dc2626' },
+                ].map(({ label, count, color }) => (
+                  <div key={label}>
+                    <div className="flex justify-between" style={{ marginBottom: '4px' }}>
+                      <span style={{ fontSize: '13px', color: '#6b7280' }}>{label}</span>
+                      <span style={{ fontSize: '13px', color: '#374151', fontWeight: '500' }}>{count}</span>
+                    </div>
+                    <div style={{ height: '6px', background: '#e5e7eb', borderRadius: '999px', overflow: 'hidden' }}>
+                      <div style={{
+                        height: '100%',
+                        width: `${Math.min((count / 50) * 100, 100)}%`,
+                        background: color,
+                        borderRadius: '999px',
+                        transition: 'width 0.6s ease'
+                      }} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href="https://leetcode.com/u/milanbudhathoki38"
+                target="_blank"
+                style={{ display: 'inline-block', marginTop: '24px', fontSize: '14px', color: '#2563eb', textDecoration: 'none' }}
+              >
+                View profile →
+              </a>
+            </div>
+          ) : (
+            <p className="text-gray-400 text-sm">Could not load stats.</p>
+          )}
+        </section>
         <hr className="border-gray-200" style={{ marginTop: '0px', marginBottom: '0px' }} />
+
 
         {/* EXPERIENCE SECTION */}
         <section id="experience" style={{ padding: '20px 0' }}>
