@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import ChatWidget from "./components/ChatWidget";
 
 export default function Home() {
   const [name, setName] = useState('')
@@ -461,9 +462,11 @@ useEffect(() => {
             </button>
             {status === 'error' && (
               <p style={{ color: 'red', fontSize: '14px' }}>Something went wrong. Please try again.</p>
+              
             )}
           </div>
         </section>
+         <ChatWidget />
 
         {/* FOOTER */}
         <footer style={{ padding: '40px 0', borderTop: '1px solid #e5e7eb', marginTop: '0px' }}>
