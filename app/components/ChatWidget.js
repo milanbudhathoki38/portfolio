@@ -53,7 +53,7 @@ export default function ChatWidget() {
   return (
     <>
       {open && (
-        <div className="chat-widget-panel fixed bottom-24 right-6 z-50 w-80 sm:w-96 h-[28rem] rounded-2xl bg-white shadow-2xl border border-gray-200 flex flex-col overflow-hidden">
+        <div className="chat-widget-panel fixed bottom-44 right-6 z-50 w-80 sm:w-96 h-[28rem] rounded-2xl bg-white shadow-2xl border border-gray-200 flex flex-col overflow-hidden">
           <div className="chat-widget-header flex items-center justify-between px-4 py-3 border-b border-gray-200">
             <span className="text-sm font-medium">Ask about Milan</span>
             <button
@@ -74,15 +74,15 @@ export default function ChatWidget() {
                 key={i}
                 className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}
               >
-                <div
-                  className={
-                    m.role === "user"
-                      ? "chat-widget-message-user max-w-[80%] rounded-2xl rounded-br-sm bg-gray-900 text-white text-sm px-3 py-2"
-                      : "chat-widget-message-bot max-w-[80%] rounded-2xl rounded-bl-sm bg-gray-100 text-gray-800 text-sm px-3 py-2"
-                  }
-                >
-                  {m.text}
-                </div>
+              <div
+                className={
+                 m.role === "user"
+                    ? "chat-widget-message-user max-w-[85%] rounded-2xl rounded-br-sm bg-gray-900 text-white text-sm leading-relaxed px-4 py-2.5 break-words"
+                    : "chat-widget-message-bot max-w-[85%] rounded-2xl rounded-bl-sm bg-gray-100 text-gray-800 text-sm leading-relaxed px-4 py-2.5 break-words"
+                     }
+                    >
+                     {m.text}
+            </div>
               </div>
             ))}
             {loading && (
@@ -120,7 +120,7 @@ export default function ChatWidget() {
       <button
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? "Close chat" : "Open chat"}
-        className="chat-widget-bubble fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gray-900 text-white shadow-lg flex items-center justify-center hover:scale-105 transition-transform"
+        className="chat-widget-bubble fixed bottom-24 right-6 z-50 w-14 h-14 rounded-full bg-gray-900 text-white shadow-lg flex items-center justify-center hover:scale-105 transition-transform"
       >
         {open ? (
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

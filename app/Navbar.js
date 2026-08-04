@@ -92,21 +92,21 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile dropdown menu */}
-      {menuOpen && (
-        <div style={{
-          position: 'fixed',
-          top: '60px',
-          left: 0,
-          right: 0,
-          zIndex: 99,
-          background: 'rgba(255,255,255,0.97)',
-          backdropFilter: 'blur(10px)',
-          borderBottom: '1px solid #f3f4f6',
-          display: 'flex',
-          flexDirection: 'column',
-          padding: '16px 24px',
-          gap: '20px',
-        }}>
+    {menuOpen && (
+  <div className="mobile-dropdown" style={{
+    position: 'fixed',
+    top: '60px',
+    left: 0,
+    right: 0,
+    zIndex: 99,
+    background: 'rgba(255,255,255,0.97)',
+    backdropFilter: 'blur(10px)',
+    borderBottom: '1px solid #f3f4f6',
+    display: 'flex',
+    flexDirection: 'column',
+    padding: '16px 24px',
+    gap: '20px',
+  }}>
           {links.map(link => (
             <a
               key={link}
@@ -134,12 +134,13 @@ export default function Navbar() {
           color: #9ca3af !important;
           border-color: #374151 !important;
         }
-        html.dark div[style*="rgba(255,255,255,0.97)"] {
-          background: rgba(17, 24, 39, 0.97) !important;
-        }
-        html.dark div[style*="rgba(255,255,255,0.97)"] a {
-          color: #f9fafb !important;
-        }
+       html.dark .mobile-dropdown {
+  background: rgba(17, 24, 39, 0.97) !important;
+}
+html.dark .mobile-dropdown a {
+  color: #f9fafb !important;
+}
+
       `}</style>
       <button
       className="back-to-top"

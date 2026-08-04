@@ -84,3 +84,49 @@ html.dark .back-to-top {
 background: #f9fafb !important;
 color: #111827 !important;
 }
+
+/* Chat widget dark mode */
+html.dark .chat-widget-panel {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+}
+
+html.dark .chat-widget-header {
+  border-color: #374151 !important;
+}
+
+html.dark .chat-widget-message-bot {
+  background: #374151 !important;
+  color: #f9fafb !important;
+}
+
+html.dark .chat-widget-message-user {
+  background: #f9fafb !important;
+  color: #111827 !important;
+}
+
+html.dark .chat-widget-input {
+  background: #111827 !important;
+  border-color: #374151 !important;
+  color: #f9fafb !important;
+}
+
+html.dark .chat-widget-bubble,
+html.dark .chat-widget-send-btn {
+  background: #f9fafb !important;
+  color: #111827 !important;
+}
+
+html.dark .chat-widget-close-btn {
+  color: #9ca3af !important;
+}
+
+html.dark .view-projects-btn {
+  background: #f9fafb !important;
+  color: #111827 !important;
+}
+
+html.dark .send-message-btn {
+  background: #f9fafb !important;
+  color: #111827 !important;
+}

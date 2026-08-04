@@ -119,7 +119,7 @@ useEffect(() => {
               anything that makes me think harder than I expected.
             </p>
             <div className="flex gap-4">
-              <a href="#projects" className="bg-gray-900 text-white rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block' }}>
+              <a href="#projects" className="view-projects-btn bg-gray-900 text-white rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block' }}>
                 View Projects
               </a>
               <a href="/resume.pdf" download className="border border-gray-300 text-gray-600 rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block' }}>
@@ -455,9 +455,10 @@ useEffect(() => {
               style={{ width: '100%', padding: '12px 16px', borderRadius: '8px', border: '1px solid #e5e7eb', fontSize: '15px', outline: 'none', fontFamily: 'Inter, sans-serif', resize: 'none', boxSizing: 'border-box' }}
             />
             <button
-              onClick={handleSubmit}
-              style={{ background: '#111827', color: 'white', padding: '12px 24px', borderRadius: '8px', fontSize: '14px', fontWeight: '500', border: 'none', cursor: 'pointer', alignSelf: 'flex-start' }}
-            >
+  onClick={handleSubmit}
+  className="send-message-btn"
+  style={{ background: '#111827', color: 'white', padding: '12px 24px', borderRadius: '8px', fontSize: '14px', fontWeight: '500', border: 'none', cursor: 'pointer', alignSelf: 'flex-start' }}
+>
               {status === 'sending' ? 'Sending...' : status === 'sent' ? 'Message sent!' : 'Send message →'}
             </button>
             {status === 'error' && (
