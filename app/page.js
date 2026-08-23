@@ -260,15 +260,38 @@ useEffect(() => {
                 Built with Next.js and Tailwind CSS, deployed on Vercel.
               </p>
               <div className="flex gap-2" style={{ marginBottom: '20px' }}>
-                <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Next.js</span>
-                <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>React</span>
-                <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Tailwind CSS</span>
+                <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>GraphQL</span>
+                <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Redis</span>
+                <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Resend</span>
               </div>
               <div className="flex gap-6">
                 <a href="https://github.com/milanbudhathoki38/portfolio" target="_blank" style={{ fontSize: '14px', color: '#2563eb' }}>GitHub →</a>
                 <a href="https://portfolio-delta-sandy-5ee88992ad.vercel.app" target="_blank" style={{ fontSize: '14px', color: '#2563eb' }}>Live Demo →</a>
               </div>
             </div>
+
+           {/* Project 4 */}
+<div className="rounded-2xl hover:bg-gray-100 transition-colors" style={{ background: '#f9fafb', padding: '24px' }}>
+  <div className="flex justify-between items-start" style={{ marginBottom: '12px' }}>
+    <h3 className="text-xl font-semibold text-gray-900">Job Application Tracker</h3>
+    <span className="text-sm text-gray-400">2026</span>
+  </div>
+  <p className="text-gray-500 leading-relaxed" style={{ marginBottom: '20px' }}>
+    Full-stack job application tracker with Google OAuth login and Row-Level Security.
+    Includes an AI powered fit-analysis feature using the Claude API to score how well a posting matches my background.
+  </p>
+  <div className="flex gap-2" style={{ marginBottom: '20px' }}>
+    <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Google OAuth</span>
+    <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Claude Anthropic AI</span>
+    <span className="text-xs text-gray-500 rounded-full" style={{ background: 'white', border: '1px solid #e5e7eb', padding: '4px 12px' }}>Rate Limiting</span>
+  </div>
+  <div className="flex gap-6">
+    <a href="https://github.com/milanbudhathoki38/job-tracker" target="_blank" style={{ fontSize: '14px', color: '#2563eb' }}>GitHub →</a>
+    <a href="https://job-tracker-psi-lovat.vercel.app/" target="_blank" style={{ fontSize: '14px', color: '#2563eb' }}>Live Demo →</a>
+  </div>
+</div>
+           
+
 
           </div>
         </section>
