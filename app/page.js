@@ -122,7 +122,7 @@ useEffect(() => {
               <a href="#projects" className="view-projects-btn bg-gray-900 text-white rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block' }}>
                 View Projects
               </a>
-              <a href="/resume.pdf" download className="border border-gray-300 text-gray-600 rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block' }}>
+              <a href="/newresume.pdf" download className="border border-gray-300 text-gray-600 rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block' }}>
                 Download Resume
               </a>
             </div>
