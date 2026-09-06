@@ -112,11 +112,10 @@ useEffect(() => {
               Budhathoki.
             </h1>
             <p className="text-xl text-gray-500 font-light italic" style={{ marginBottom: '12px' }}>
-              Mathematics is the why. Code is the how.
+            Curiosity is the why. Building is the how.
             </p>
             <p className="text-base text-gray-400 max-w-xl leading-relaxed" style={{ marginBottom: '40px' }}>
-              CS student who builds things to understand them. Web apps, algorithms, 
-              anything that makes me think harder than I expected.
+              CS student focused on backend and infrastructure, the systems running underneath the interface. I like taking things apart (APIs, databases, algorithms) until I understand exactly how they work, then building my own.
             </p>
             <div className="flex gap-4">
               <a href="#projects" className="view-projects-btn bg-gray-900 text-white rounded-lg text-sm font-medium cursor-pointer" style={{ padding: '12px 24px', textDecoration: 'none', display: 'inline-block' }}>
@@ -180,20 +179,23 @@ useEffect(() => {
             A little about me.
           </h2>
           <div className="max-w-2xl flex flex-col" style={{ gap: '24px' }}>
-            <p className="text-lg text-gray-500 leading-relaxed">
-            I started college placing into intermediate algebra and ended up pursuing a math 
-            minor because I genuinely fell in love with it. There is something about 
-            mathematics that just clicked for me in a way I never expected.
-            </p>
-            <p className="text-lg text-gray-500 leading-relaxed">
-             I like problems that make me slow down and actually think. Algorithms, calculus, 
-             how the web works under the hood, that stuff genuinely interests me. Outside of 
-             class I build real projects because that is how I learn best.
-            </p>
-            <p className="text-lg text-gray-500 leading-relaxed">
-              Currently studying CS with a Mathematics minor.
-              Always building, always learning.
-            </p>
+        <p className="text-lg text-gray-500 leading-relaxed">
+        I started college placing into intermediate algebra and ended up pursuing a math 
+        minor because I genuinely fell in love with it. There is something about 
+        mathematics that just clicked for me in a way I never expected.
+        </p>
+        <p className="text-lg text-gray-500 leading-relaxed">
+          I'm drawn to problems that make me slow down and actually think, algorithms, 
+          calculus, how systems work under the hood. Outside of class I build real 
+          backend focused projects, authentication flows, databases, caching layers, 
+          and API integrations, because that's how I actually learn.
+        </p>
+        <p className="text-lg text-gray-500 leading-relaxed">
+        Currently studying Computer Science with a Mathematics minor, focused on 
+        backend and infrastructure engineering, and building my foundation in data 
+        structures and algorithms one problem at a time.
+      </p>
+
           </div>
         </section>
 
@@ -298,53 +300,60 @@ useEffect(() => {
 
         <hr className="border-gray-200" style={{ marginTop: '0px', marginBottom: '0px' }} />
 
+
         {/* SKILLS SECTION */}
-        <section id="skills" style={{ padding: '20px 0' }}>
-          <p style={{ fontSize: '12px', color: '#6b7280', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-            Skills
-          </p>
-          <h2 className="text-4xl font-semibold text-gray-900" style={{ marginBottom: '20px', marginTop: '12px' }}>
-            What I work with.
-          </h2>
+<section id="skills" style={{ padding: '20px 0' }}>
+  <p style={{ fontSize: '12px', color: '#6b7280', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+    Skills
+  </p>
+  <h2 className="text-4xl font-semibold text-gray-900" style={{ marginBottom: '20px', marginTop: '12px' }}>
+    What I work with.
+  </h2>
 
-          <div className="flex flex-col" style={{ gap: '32px' }}>
-            <div>
-              <p style={{ fontSize: '12px', color: '#9ca3af', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Languages</p>
-              <div className="flex flex-wrap" style={{ gap: '10px' }}>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>C++</span>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Python</span>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>JavaScript</span>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>HTML & CSS</span>
-              </div>
-            </div>
+  <div className="flex flex-col" style={{ gap: '32px' }}>
+    <div>
+      <p style={{ fontSize: '12px', color: '#9ca3af', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Languages</p>
+      <div className="flex flex-wrap" style={{ gap: '10px' }}>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>C++</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Python</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>JavaScript</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>SQL (Basic)</span>
+      </div>
+    </div>
 
-            <div>
-              <p style={{ fontSize: '12px', color: '#9ca3af', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Frameworks & Tools</p>
-              <div className="flex flex-wrap" style={{ gap: '10px' }}>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>React</span>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Next.js</span>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Tailwind CSS</span>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Git</span>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>GitHub</span>
-              </div>
-            </div>
+    <div>
+      <p style={{ fontSize: '12px', color: '#9ca3af', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Frameworks & Tools</p>
+      <div className="flex flex-wrap" style={{ gap: '10px' }}>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>React</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Next.js</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Supabase</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Redis</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Claude API</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Git</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>GitHub</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>GitHub Actions</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Linux (Basic)</span>
+      </div>
+    </div>
 
-            <div>
-              <p style={{ fontSize: '12px', color: '#9ca3af', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Concepts</p>
-              <div className="flex flex-wrap" style={{ gap: '10px' }}>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>OOP</span>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Data Structures</span>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Algorithms</span>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Digital Logic</span>
-                <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Network Troubleshooting</span>
-              </div>
-            </div>
-          </div>
-        </section>
+    <div>
+      <p style={{ fontSize: '12px', color: '#9ca3af', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Concepts</p>
+      <div className="flex flex-wrap" style={{ gap: '10px' }}>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>OOP</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Data Structures</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Algorithms</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Database Design</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>REST APIs</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Caching</span>
+        <span className="text-gray-600 rounded-lg text-sm" style={{ background: '#f9fafb', border: '1px solid #e5e7eb', padding: '8px 16px' }}>Machine Learning</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-        
+
 <hr className="border-gray-200" style={{ marginTop: '0px', marginBottom: '0px' }} />
-
+        
         {/* LEETCODE SECTION */}
         <section id="leetcode" style={{ padding: '20px 0' }}>
           <p style={{ fontSize: '12px', color: '#6b7280', marginBottom: '12px', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
@@ -429,12 +438,12 @@ useEffect(() => {
             <div className="rounded-2xl" style={{ background: '#f9fafb', padding: '32px' }}>
               <div className="flex justify-between items-start" style={{ marginBottom: '8px' }}>
                 <h3 className="text-xl font-semibold text-gray-900">Math Tutor</h3>
-                <span className="text-sm text-gray-400" style={{ whiteSpace: 'nowrap', marginLeft: '12px' }}>Aug 2024 – May 2025</span>
+                <span className="text-sm text-gray-400" style={{ whiteSpace: 'nowrap', marginLeft: '12px' }}>Aug 2026 – Present</span>
               </div>
-              <a href="https://www.lyon.edu" target="_blank" style={{ fontSize: '14px', color: '#2563eb', marginBottom: '16px', display: 'block', textDecoration: 'none' }}>Lyon College →</a>
+              <a href="https://www.astate.edu" target="_blank" style={{ fontSize: '14px', color: '#2563eb', marginBottom: '16px', display: 'block', textDecoration: 'none' }}>Arkansas State University →</a>
               <ul className="flex flex-col" style={{ gap: '8px' }}>
-                <li className="text-gray-500 text-sm leading-relaxed">→ Tutored students in foundational mathematics improving understanding and performance</li>
-                <li className="text-gray-500 text-sm leading-relaxed">→ Assisted with problem-solving and exam preparation in a peer-learning setting</li>
+                <li className="text-gray-500 text-sm leading-relaxed">→ Tutor students in mathematics and statistics coursework through Arkansas State's KOL Tutoring program</li>
+                <li className="text-gray-500 text-sm leading-relaxed">→ Break down problem sets and exam preparation into clear step by step explanations</li>
               </ul>
             </div>
 
