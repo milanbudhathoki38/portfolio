@@ -130,3 +130,7 @@ html.dark .send-message-btn {
   background: #f9fafb !important;
   color: #111827 !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -213,7 +213,7 @@ useEffect(() => {
           <div className="flex flex-col" style={{ gap: '20px' }}>
 
             {/* Project 1 */}
-            <div className="rounded-2xl hover:bg-gray-100 transition-colors" style={{ background: '#f9fafb', padding: '24px' }}>
+            <div className="rounded-2xl transition duration-200 hover:-translate-y-1 hover:shadow-lg" style={{ background: '#f9fafb', padding: '24px' }}>
               <div className="flex justify-between items-start" style={{ marginBottom: '12px' }}>
                 <h3 className="text-xl font-semibold text-gray-900">Digital Logic Projects</h3>
                 <span className="text-sm text-gray-400">2025</span>
@@ -232,7 +232,7 @@ useEffect(() => {
             </div>
 
             {/* Project 2 */}
-            <div className="rounded-2xl hover:bg-gray-100 transition-colors" style={{ background: '#f9fafb', padding: '24px' }}>
+            <div className="rounded-2xl transition duration-200 hover:-translate-y-1 hover:shadow-lg" style={{ background: '#f9fafb', padding: '24px' }}>
               <div className="flex justify-between items-start" style={{ marginBottom: '12px' }}>
                 <h3 className="text-xl font-semibold text-gray-900">Dragon Minigame</h3>
                 <span className="text-sm text-gray-400">2026</span>
@@ -252,7 +252,7 @@ useEffect(() => {
             </div>
 
             {/* Project 3 */}
-            <div className="rounded-2xl hover:bg-gray-100 transition-colors" style={{ background: '#f9fafb', padding: '24px' }}>
+           <div className="rounded-2xl transition duration-200 hover:-translate-y-1 hover:shadow-lg" style={{ background: '#f9fafb', padding: '24px' }}>
               <div className="flex justify-between items-start" style={{ marginBottom: '12px' }}>
                 <h3 className="text-xl font-semibold text-gray-900">Portfolio Website</h3>
                 <span className="text-sm text-gray-400">2026</span>
@@ -273,7 +273,7 @@ useEffect(() => {
             </div>
 
            {/* Project 4 */}
-<div className="rounded-2xl hover:bg-gray-100 transition-colors" style={{ background: '#f9fafb', padding: '24px' }}>
+<div className="rounded-2xl transition duration-200 hover:-translate-y-1 hover:shadow-lg" style={{ background: '#f9fafb', padding: '24px' }}>
   <div className="flex justify-between items-start" style={{ marginBottom: '12px' }}>
     <h3 className="text-xl font-semibold text-gray-900">Job Application Tracker</h3>
     <span className="text-sm text-gray-400">2026</span>
